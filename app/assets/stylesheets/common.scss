@@ -453,3 +453,18 @@ body {
 .item_status {
   min-width: 200px;
 }
+
+#attachmentModal {
+  .modal-dialog {
+    width: 1000px;
+  }
+
+  .modal-body {
+    height: 700px;
+  }
+
+  .modal {
+    padding-top: 30px;
+    background-color: rgba(0,0,0,0.7);
+  }
+}

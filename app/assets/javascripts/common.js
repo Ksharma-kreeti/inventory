@@ -28,3 +28,9 @@ $(document).on('change', "#issue_system_id", function() {
   var selected = $(this).find('option:selected');
   $('#issue_closed_at').data('DateTimePicker').minDate(moment(selected.data('assembled_on'), 'YYYY MM DD'));
 });
+
+$('#attachmentModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var url = button.data('url');
+  $("#attachment").attr('data', url);
+});
